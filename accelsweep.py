@@ -1,3 +1,12 @@
+### Author: Lars Weiler
+### Description: accelerator sweep
+### Category: fun
+### License: THE NERD-WARE LICENSE (Revision 2)
+### Appname: accelsweep
+
+# doodling around with the accelerator and the buzzer
+# uses the accelerator for input of the buzzer and displays a circle
+
 from imu import IMU
 import pyb
 import ugfx
@@ -35,3 +44,4 @@ while not buttons.is_pressed("BTN_MENU"):
 ugfx.clear(ugfx.BLACK)
 
 pyb.Pin("BUZZ", pyb.Pin.OUT).low()
+
